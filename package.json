@@ -1,0 +1,44 @@
+{
+	"name": "mimurl",
+	"version": "0.1.0",
+	"description": "MiM URL Parsing and Matching Library",
+	"homepage": "https://mmichlin66.github.io/mimurl/mimurlAbout.html",
+	"repository": "github:mmichlin66/mimurl",
+	"main": "./dist/mimurlTypes.d.ts",
+	"module": "./dist/mimurlTypes.d.ts",
+	"types": "./dist/mimurlTypes.d.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "build && pause && exit"
+	},
+	"author": {
+		"name": "Michael Michlin",
+		"email": "mmichlin@hotmail.com",
+		"url": "https://mmichlin66.github.io"
+	},
+	"keywords": [
+		"URL",
+		"pattern",
+		"parsing",
+		"matching"
+	],
+	"license": "MIT",
+	"devDependencies": {
+		"awesome-typescript-loader": "^5.2.1",
+		"ifdef-loader": "^2.1.1",
+		"source-map-loader": "^0.2.4",
+		"ts-loader": "^5.3.3",
+		"typescript": "^3.2.4"
+	},
+	"files": [
+		"README.md",
+		"dist/mimurl.js",
+		"dist/mimurlTypes.d.ts"
+	],
+	"dependencies": {},
+	"-vs-binding": {
+		"ProjectOpened": [
+			"install_global_deps"
+		]
+	}
+}
