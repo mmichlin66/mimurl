@@ -1,6 +1,6 @@
 {
 	"name": "mimurl",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "MiM URL Parsing and Matching Library",
 	"homepage": "https://mmichlin66.github.io/mimurl/mimurlAbout.html",
 	"repository": "github:mmichlin66/mimurl",
@@ -33,7 +33,8 @@
 	},
 	"files": [
 		"dist/mimurl.js",
-		"dist/mimurlTypes.d.ts"
+		"dist/mimurlTypes.d.ts",
+		"dist/api.d.ts"
 	],
 	"dependencies": {},
 	"-vs-binding": {
