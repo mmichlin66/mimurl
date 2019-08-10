@@ -12,7 +12,7 @@ Mimurl library allows defining URL patterns and matching actual URLs against the
 ## Installation
 
 ```
-npm install mimurl -D
+npm install mimurl
 ```
 
 ## Usage

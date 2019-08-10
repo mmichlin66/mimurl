@@ -5,11 +5,11 @@
 	"commands":
 	[
         {
-            "text": "mimurl",
+            "text": "mimurl Dev",
             "tooltip": "build debug mimurl",
             "color": "white",
             "commandType": "script",
-            "command": "build-dev",
+            "command": "buildDev",
             "alignment": "left",
             "priority": 1
         },
@@ -18,16 +18,16 @@
             "tooltip": "build release mimurl",
             "color": "yellow",
             "commandType": "script",
-            "command": "build-prod",
+            "command": "buildProd",
             "alignment": "left",
             "priority": 1
         },
         {
             "text": "mimurl Doc",
             "tooltip": "build mimurl API reference documentation",
-            "color": "coral",
+            "color": "pink",
             "commandType": "script",
-            "command": "build-doc",
+            "command": "doc",
             "alignment": "left",
             "priority": 1
         }
