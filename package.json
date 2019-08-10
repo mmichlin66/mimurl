@@ -8,8 +8,9 @@
 	"module": "./dist/mimurlTypes.d.ts",
 	"types": "./dist/mimurlTypes.d.ts",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "build && pause && exit"
+		"build-dev": "build.bat",
+		"build-prod": "buildProd.bat",
+		"build-doc": "doc.bat"
 	},
 	"author": {
 		"name": "Michael Michlin",
@@ -31,7 +32,6 @@
 		"typescript": "^3.2.4"
 	},
 	"files": [
-		"README.md",
 		"dist/mimurl.js",
 		"dist/mimurlTypes.d.ts"
 	],

@@ -1,0 +1,35 @@
+{
+    "skipTerminateQuickPick": true,
+    "skipSwitchToOutput": false,
+    "skipErrorMessage": true,
+	"commands":
+	[
+        {
+            "text": "mimurl",
+            "tooltip": "build debug mimurl",
+            "color": "white",
+            "commandType": "script",
+            "command": "build-dev",
+            "alignment": "left",
+            "priority": 1
+        },
+        {
+            "text": "mimurl Prod",
+            "tooltip": "build release mimurl",
+            "color": "yellow",
+            "commandType": "script",
+            "command": "build-prod",
+            "alignment": "left",
+            "priority": 1
+        },
+        {
+            "text": "mimurl Doc",
+            "tooltip": "build mimurl API reference documentation",
+            "color": "coral",
+            "commandType": "script",
+            "command": "build-doc",
+            "alignment": "left",
+            "priority": 1
+        }
+    ]
+}

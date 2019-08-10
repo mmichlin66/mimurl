@@ -1,3 +1,2 @@
-call webpack -p --display-error-details
-
-pause
+@echo off
+webpack -p --display-error-details
