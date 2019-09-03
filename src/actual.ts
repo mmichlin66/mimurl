@@ -220,7 +220,7 @@ function isValidPort( s: string): boolean
  */
 function isValidSegment( s: string): boolean
 {
-	return /^[a-z0-9_\-%]+$/i.test(s);
+	return /^[a-z0-9_\-\.%]+$/i.test(s);
 }
 
 

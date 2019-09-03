@@ -1157,12 +1157,12 @@ class ParsedField extends ParsedToken implements api.IParsedField
 
 /**
  * Determines whether the given string is a valid text token in a segement. To be valid, it must
- * be alpha-numeric or undescore '_' or dash '-' or percent sign '%' (for URL-encoded characters).
+ * be alpha-numeric or undescore '_' or dash '-' or dor '.' or percent sign '%' (for URL-encoded characters).
  * @param s
  */
 function isValidTextToken( s: string): boolean
 {
-	return /^[a-z0-9_\-%]+$/i.test(s);
+	return /^[a-z0-9_\-\.%]+$/i.test(s);
 }
 
 
