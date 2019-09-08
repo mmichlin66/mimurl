@@ -4,8 +4,8 @@
 	"description": "MiM URL Parsing and Matching Library",
 	"homepage": "https://mmichlin66.github.io/mimurl/mimurlAbout.html",
 	"repository": "github:mmichlin66/mimurl",
-	"main": "./dist/mimurlTypes.d.ts",
-	"module": "./dist/mimurlTypes.d.ts",
+	"main": "./dist/mimurl.js",
+	"module": "./dist/mimurl.jts",
 	"types": "./dist/mimurlTypes.d.ts",
 	"scripts": {
 		"buildDev": "buildDev.bat",
@@ -33,6 +33,7 @@
 	},
 	"files": [
 		"dist/mimurl.js",
+		"dist/mimurl.js.map",
 		"dist/mimurlTypes.d.ts",
 		"dist/api.d.ts"
 	],
