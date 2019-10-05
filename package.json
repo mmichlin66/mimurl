@@ -1,12 +1,12 @@
 {
 	"name": "mimurl",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "MiM URL Parsing and Matching Library",
 	"homepage": "https://mmichlin66.github.io/mimurl/mimurlAbout.html",
 	"repository": "github:mmichlin66/mimurl",
-	"main": "./dist/mimurl.js",
-	"module": "./dist/mimurl.jts",
-	"types": "./dist/mimurlTypes.d.ts",
+	"main": "./lib/mimurl.js",
+	"module": "./lib/mimurl.jts",
+	"types": "./lib/mimurlTypes.d.ts",
 	"scripts": {
 		"buildDev": "buildDev.bat",
 		"buildProd": "buildProd.bat",
@@ -32,10 +32,10 @@
 		"typescript": "^3.2.4"
 	},
 	"files": [
-		"dist/mimurl.js",
-		"dist/mimurl.js.map",
-		"dist/mimurlTypes.d.ts",
-		"dist/api.d.ts"
+		"lib/mimurl.js",
+		"lib/mimurl.js.map",
+		"lib/mimurlTypes.d.ts",
+		"lib/api.d.ts"
 	],
 	"dependencies": {},
 	"-vs-binding": {
