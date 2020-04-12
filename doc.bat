@@ -1,2 +1,2 @@
 @echo off
-typedoc --out lib/reference src/api.ts --readme none --excludeExternals --excludeNotExported --excludePrivate
+typedoc --out ./reference src/api.ts --readme none --excludeExternals --excludeNotExported --excludePrivate
