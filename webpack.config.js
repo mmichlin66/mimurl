@@ -1,63 +1,44 @@
-let isProd = process.argv.indexOf('-p') !== -1;
-let mode = isProd ? "production" : "development";
-let devtool = isProd ? "source-map" : "#inline-source-map";
-let outputFilename = isProd ? "mimurl.js" : "mimurl.dev.js";
+const dev_ifdefLoaderOptions = { DEBUG: true };
+const prod_ifdefLoaderOptions = { DEBUG: false };
 
 
-// define preprocessor variables for ifdef-loader
-const ifdefLoaderOptions =
+
+function config( outFileName, mode, devtool, ifdefLoaderOptions)
 {
-    DEBUG: !isProd,
+    return {
+        entry: "./lib/mimurlTypes.js",
 
-    //"ifdef-verbose": true,       // add this for verbose output
-    //"ifdef-triple-slash": false  // add this to use double slash comment instead of default triple slash
-};
+        output:
+        {
+            filename: outFileName,
+            path: __dirname + "/lib",
+            library: 'mimurl',
+            libraryTarget: 'umd',
+            globalObject: 'this'
+        },
+
+        mode: mode,
+        devtool: devtool,
+        resolve: { extensions: [".js"] },
+
+        module:
+        {
+            rules:
+            [
+                { test: /\.js$/, use: [{ loader: "ifdef-loader", options: ifdefLoaderOptions }] },
+                { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+            ]
+        }
+    }
+}
 
 
 
 module.exports =
-{
-    entry: "./src/mimurlTypes.ts",
+[
+    config( "mimurl.dev.js", "development", "#inline-source-map", dev_ifdefLoaderOptions),
+    config( "mimurl.js", "production", "source-map", prod_ifdefLoaderOptions),
+];
 
-    output:
-    {
-        filename: outputFilename,
-        path: __dirname + "/lib",
-		library: 'mimurl',
-		libraryTarget: 'umd',
-		globalObject: 'this'
-    },
 
-    mode: mode,
-    //mode: "production",
-    //mode: "none",
 
-    // Enable sourcemaps for debugging webpack's output.
-    devtool: devtool,
-    //devtool: "source-map",
-
-    resolve:
-    {
-        // Add resolvable extensions.
-        extensions: [".ts", ".js", ".json"]
-    },
-
-    module:
-    {
-        rules:
-        [
-            {
-                test: /\.tsx?$/,
-                use:
-                [
-                    //{ loader: "awesome-typescript-loader" },
-                    { loader: "ts-loader" },
-                    { loader: "ifdef-loader", options: ifdefLoaderOptions }
-                ]
-            },
-
-            // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
-        ]
-    },
-};

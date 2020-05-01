@@ -1,16 +1,19 @@
 {
-	"compilerOptions": {
+	"compilerOptions":
+	{
+		"composite": true,
 		"declaration": true,
-		"outDir": "./lib/",
+		"declarationMap": true,
 		"sourceMap": true,
 		"noImplicitAny": false,
 		"strictNullChecks": false,
+		"experimentalDecorators": true,
+		"preserveConstEnums": false,
 		"module": "commonjs",
 		"target": "ES2017",
+		"rootDir": "src",
 		"lib": [ "ES2017", "dom" ],
-		"experimentalDecorators": true,
-		"jsx": "react",
-		"preserveConstEnums": false
+		"outDir": "./lib/"
 	},
 
 	"include": [

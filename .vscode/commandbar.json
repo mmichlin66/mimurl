@@ -5,18 +5,10 @@
 	"commands":
 	[
         {
-            "text": "mimurl Dev",
+            "text": "mimurl build",
             "color": "white",
             "commandType": "script",
-            "command": "buildDev",
-            "alignment": "left",
-            "priority": 1
-        },
-        {
-            "text": "mimurl Prod",
-            "color": "yellow",
-            "commandType": "script",
-            "command": "buildProd",
+            "command": "build",
             "alignment": "left",
             "priority": 1
         },

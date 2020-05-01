@@ -1,6 +1,6 @@
 {
 	"name": "mimurl",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "MiM URL Parsing and Matching Library",
 	"homepage": "https://mmichlin66.github.io/mimurl/mimurlAbout.html",
 	"repository": "github:mmichlin66/mimurl",
@@ -8,8 +8,7 @@
 	"module": "./lib/mimurl.jts",
 	"types": "./lib/mimurlTypes.d.ts",
 	"scripts": {
-		"buildDev": "buildDev.bat",
-		"buildProd": "buildProd.bat",
+		"build": "tsc -b && webpack",
 		"doc": "doc.bat"
 	},
 	"author": {
@@ -25,22 +24,16 @@
 	],
 	"license": "MIT",
 	"devDependencies": {
-		"awesome-typescript-loader": "^5.2.1",
 		"ifdef-loader": "^2.1.1",
 		"source-map-loader": "^0.2.4",
-		"ts-loader": "^5.3.3",
-		"typescript": "^3.8.3"
+		"typescript": "^3.8.3",
+		"webpack": "^4.42.1",
+		"webpack-cli": "^3.3.8"
 	},
 	"files": [
 		"lib/mimurl.js",
 		"lib/mimurl.js.map",
 		"lib/mimurlTypes.d.ts",
 		"lib/api.d.ts"
-	],
-	"dependencies": {},
-	"-vs-binding": {
-		"ProjectOpened": [
-			"install_global_deps"
-		]
-	}
+	]
 }
