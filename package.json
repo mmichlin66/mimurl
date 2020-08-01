@@ -5,7 +5,7 @@
 	"homepage": "https://mmichlin66.github.io/mimurl/mimurlAbout.html",
 	"repository": "github:mmichlin66/mimurl",
 	"main": "./lib/mimurl.js",
-	"module": "./lib/mimurl.jts",
+	"module": "./lib/mimurl.js",
 	"types": "./lib/mimurlTypes.d.ts",
 	"scripts": {
 		"build": "tsc -b && webpack",
@@ -26,9 +26,9 @@
 	"devDependencies": {
 		"ifdef-loader": "^2.1.5",
 		"source-map-loader": "^0.2.4",
-		"typescript": "^3.9.2",
-		"webpack": "^4.42.1",
-		"webpack-cli": "^3.3.8"
+		"typescript": "^3.9.7",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12"
 	},
 	"files": [
 		"lib/mimurl.js",
