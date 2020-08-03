@@ -33,7 +33,7 @@ else
 
 ## Features
 Please refer to the following documents describing the Mimurl library in more details:
-* [About](https://mmichlin66.github.io/mimurl/mimurlAbout.html)
-* [API Reference](https://mmichlin66.github.io/mimurl/mimurlReference.html)
-* [Playground](https://mmichlin66.github.io/mimurl/mimurlDemo.html)
+* [About](https://mmichlin66.github.io/mimurl/about.html)
+* [API Reference](https://mmichlin66.github.io/mimurl/reference.html)
+* [Playground](https://mmichlin66.github.io/mimurl/playground.html)
 

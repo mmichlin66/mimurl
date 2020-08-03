@@ -2,7 +2,7 @@
 	"name": "mimurl",
 	"version": "0.1.4",
 	"description": "MiM URL Parsing and Matching Library",
-	"homepage": "https://mmichlin66.github.io/mimurl/mimurlAbout.html",
+	"homepage": "https://mmichlin66.github.io/mimurl/about.html",
 	"repository": "github:mmichlin66/mimurl",
 	"main": "./lib/mimurl.js",
 	"module": "./lib/mimurl.js",

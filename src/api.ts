@@ -2,10 +2,10 @@
  * This file contains the public API of the URL Parsing and Matching library 'mimurl'.
  *
  * To read about mimurl features
- * <a href="https://mmichlin66.github.io/mimurl/mimurlAbout.html" target="_top">please visit here</a>.
+ * <a href="https://mmichlin66.github.io/mimurl/about.html" target="_top">please visit here</a>.
  *
  * To play with mimurl pattern parsing and URL matching capabilities
- * <a href="https://mmichlin66.github.io/mimurl/mimurlDemo.html" target="_top">please visit here</a>.
+ * <a href="https://mmichlin66.github.io/mimurl/playground.html" target="_top">please visit here</a>.
  */
 
 /**
