@@ -32,7 +32,7 @@
 	},
 	"files": [
 		"lib/mimurl.js",
-		"lib/mimurl.js.map",
+		"lib/mimurl.dev.js.",
 		"lib/mimurlTypes.d.ts",
 		"lib/api.d.ts"
 	]
