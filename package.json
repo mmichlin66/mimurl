@@ -1,12 +1,12 @@
 {
 	"name": "mimurl",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "MiM URL Parsing and Matching Library",
 	"homepage": "https://mmichlin66.github.io/mimurl/about.html",
 	"repository": "github:mmichlin66/mimurl",
 	"main": "./lib/mimurl.js",
 	"module": "./lib/mimurl.js",
-	"types": "./lib/mimurlTypes.d.ts",
+	"types": "./lib/index.d.ts",
 	"scripts": {
 		"build": "tsc -b && webpack",
 		"doc": "doc.bat"
@@ -33,7 +33,7 @@
 	"files": [
 		"lib/mimurl.js",
 		"lib/mimurl.dev.js.",
-		"lib/mimurlTypes.d.ts",
+		"lib/index.d.ts",
 		"lib/api.d.ts"
 	]
 }
