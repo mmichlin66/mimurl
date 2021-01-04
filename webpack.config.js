@@ -36,7 +36,7 @@ function config( outFileName, mode, devtool, ifdefLoaderOptions)
 
 module.exports =
 [
-    config( "mimurl.dev.js", "development", "#inline-source-map", dev_ifdefLoaderOptions),
+    config( "mimurl.dev.js", "development", "inline-source-map", dev_ifdefLoaderOptions),
     config( "mimurl.js", "production", undefined, prod_ifdefLoaderOptions),
 ];
 
